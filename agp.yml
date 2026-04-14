@@ -1,0 +1,16 @@
+version: "1"
+
+limits:
+  maxOpenPRs: 3
+  maxPRsPerRun: 2
+
+validation:
+  enabled: true
+  commands:
+    - npm run build
+    - npm run test
+
+pr:
+  labels:
+    - dependencies
+    - agp
